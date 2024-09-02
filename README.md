@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Managing Next.js Secrets in CI/CD
+This repository demonstrates a secure approach to managing environment variables in a Next.js application using Docker and GitHub Actions.
 
+## Overview
+In Next.js applications, handling environment variables, especially for client-side use, requires careful consideration. This project showcases how to securely manage and expose environment variables during the CI/CD process, ensuring that sensitive information is protected.
+
+## Key Features
+- **Next.js:** Leveraging environment variables securely on both the server and client side.
+- **Docker:** Containerization of the Next.js application for consistent deployment.
+- **GitHub Actions:** Automated build and deployment process with secure handling of secrets.
+## How It Works
+- **Dockerfile Modifications:** Integrates build-time arguments to securely pass environment  variables into the application.
+- **GitHub Actions:** Uses GitHub Secrets to securely inject environment variables during the Docker build process, ensuring that sensitive information is not exposed in the codebase or public repositories.
+## Repository Structure
+- **src/:** Contains the Next.js application source code.
+- **Dockerfile:** Configures the Docker image, including secure handling of environment variables.
+- **.github/workflows/:** Contains the GitHub Actions workflow file used for CI/CD.
 ## Getting Started
+Clone the repository and follow the instructions in the relevant blog post to set up and run the application.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+This project is licensed under the MIT License.
