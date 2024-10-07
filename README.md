@@ -1,6 +1,10 @@
 # Managing Next.js Secrets in CI/CD
 This repository demonstrates a secure approach to managing environment variables in a Next.js application using Docker and GitHub Actions.
 
+[![Watch the video](https://img.youtube.com/vi/6nkF0WYy_Qo/maxresdefault.jpg)](https://youtu.be/6nkF0WYy_Qo)
+
+### [Watch this video on YouTube](https://youtu.be/6nkF0WYy_Qo)
+
 ## Overview
 In Next.js applications, handling environment variables, especially for client-side use, requires careful consideration. This project showcases how to securely manage and expose environment variables during the CI/CD process, ensuring that sensitive information is protected.
 
